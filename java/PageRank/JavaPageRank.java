@@ -1,3 +1,4 @@
+package PageRank;
 /*
  * Licensed to the Apache Software Foundation (ASF) under one or more
  * contributor license agreements.  See the NOTICE file distributed with
@@ -15,8 +16,6 @@
  * limitations under the License.
  */
 
-package org.apache.spark.examples;
-
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -31,6 +30,7 @@ import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.function.Function2;
 import org.apache.spark.sql.SparkSession;
+
 
 /**
  * Computes the PageRank of URLs from an input file. Input file should
