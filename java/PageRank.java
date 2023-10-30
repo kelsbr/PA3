@@ -65,6 +65,7 @@ public class PageRank {
             ranks = tempRank.reduceByKey((a, b) -> a + b);
         }
 
+
         // Joining the ranks with the titles
         JavaPairRDD<Double, String> swappedRanks = titleIndex.join(ranks).mapToPair(item -> new Tuple2<>(item._2._2, item._2._1));
 
